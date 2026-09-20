@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  devcontainer:
+    image: ghcr.io/tak289/devenv:fomaud-ubuntu.resolute
+    user: dev
+
+    volumes:
+      - ..:/workspace/:cached
+    #network_mode: service:db
+    command: sleep infinity
